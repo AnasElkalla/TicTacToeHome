@@ -47,13 +47,13 @@ onePlayer.addEventListener("click", function () {
 selectLevel.addEventListener("click", function () {
   makeSound();
 
-  window.location.href = "One Player/index.html";
+  window.location="https://anaselkalla.github.io/TicTacToe-SingleLevelOne/";
 });
 
 twoPlayers.addEventListener("click", function () {
   makeSound();
 
-  window.location.href = "Two Players/index.html";
+  window.location="https://anaselkalla.github.io/TicTacToe-TwoPlayers/";
 });
 let activeMenu = false;
 
@@ -82,14 +82,14 @@ exit.addEventListener("click", function () {
 home.addEventListener("click", function () {
   makeSound();
   const homePage = function () {
-    window.location.href = "/index.html";
+    window.location.href = window.location.href
   };
   setInterval(homePage, 1000);
 });
 newGame.addEventListener("click", function () {
   makeSound();
   const homePage = function () {
-    window.location.href = "/index.html";
+    window.location.href =window.location.href
   };
   setInterval(homePage, 1000);
 });
