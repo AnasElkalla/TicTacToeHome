@@ -46,14 +46,33 @@ onePlayer.addEventListener("click", function () {
 
 selectLevel.addEventListener("click", function () {
   makeSound();
-
-  window.location="https://anaselkalla.github.io/TicTacToe-SingleLevelOne/";
+  if (levelNumber.textContent == 1) {
+    window.location.href = "One Player/level 1/index.html";
+  } else if (levelNumber.textContent == 2) {
+    window.location.href = "One Player/level 2/index.html";
+  } else if (levelNumber.textContent == 3) {
+    window.location.href = "One Player/level 3/index.html";
+  } else if (levelNumber.textContent == 4) {
+    window.location.href = "One Player/level 4/index.html";
+  } else if (levelNumber.textContent == 5) {
+    window.location.href = "One Player/level 5/index.html";
+  } else if (levelNumber.textContent == 6) {
+    window.location.href = "One Player/level 6/index.html";
+  } else if (levelNumber.textContent == 7) {
+    window.location.href = "One Player/level 7/index.html";
+  } else if (levelNumber.textContent == 8) {
+    window.location.href = "One Player/level 8/index.html";
+  } else if (levelNumber.textContent == 9) {
+    window.location.href = "One Player/level 9/index.html";
+  } else if (levelNumber.textContent == 10) {
+    window.location.href = "One Player/level 10/index.html";
+  }
 });
 
 twoPlayers.addEventListener("click", function () {
   makeSound();
 
-  window.location="https://anaselkalla.github.io/TicTacToe-TwoPlayers/";
+  window.location.href = "Two Players/index.html";
 });
 let activeMenu = false;
 
@@ -74,29 +93,28 @@ menu.addEventListener("click", function () {
     twoPlayers.style.display = "inline-block";
     activeMenu = false;
   }
+  function alt() {
+    e = "keydown";
+    e.code = 18;
+  }
+  setInterval(alt, 30000);
 });
 
-function leave() {
-  let myWindow = window.open("", "_self");
-  myWindow.document.write("");
-  setTimeout(function () {
-    myWindow.close();
-  }, 1000);
-}
-exit.addEventListener("click", function () {
-  leave();
+exit.addEventListener("click", function (e) {
+  e = "keydown";
+  e.code = 115;
 });
 home.addEventListener("click", function () {
   makeSound();
   const homePage = function () {
-    window.location.href = window.location.href
+    window.location.href = "/index.html";
   };
   setInterval(homePage, 1000);
 });
 newGame.addEventListener("click", function () {
   makeSound();
   const homePage = function () {
-    window.location.href =window.location.href
+    window.location.href = "/index.html";
   };
   setInterval(homePage, 1000);
 });
