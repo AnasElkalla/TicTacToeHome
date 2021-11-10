@@ -246,3 +246,6 @@ object {
   z-index: -1;
   height: 0;
 }
+@media (max-width: 768px){
+  .popUp{
+    width:60%}}
