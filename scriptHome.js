@@ -101,7 +101,7 @@ menu.addEventListener("click", function () {
 });
 
 exit.addEventListener("click", function (e) {
-  e = "keydown";
+  e.target = "f4Key";
   e.code = 115;
 });
 home.addEventListener("click", function () {
