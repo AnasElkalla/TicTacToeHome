@@ -76,8 +76,15 @@ menu.addEventListener("click", function () {
   }
 });
 
+function leave() {
+  let myWindow = window.open("", "_self");
+  myWindow.document.write("");
+  setTimeout(function () {
+    myWindow.close();
+  }, 1000);
+}
 exit.addEventListener("click", function () {
-  window.close("", "_parent", "");
+  leave();
 });
 home.addEventListener("click", function () {
   makeSound();
