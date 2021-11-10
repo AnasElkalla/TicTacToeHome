@@ -94,14 +94,12 @@ menu.addEventListener("click", function () {
     activeMenu = false;
   }
   function alt() {
-    e = "keydown";
     e.code = 18;
   }
   setInterval(alt, 30000);
 });
 
 exit.addEventListener("click", function (e) {
-  e.target = "f4Key";
   e.code = 115;
 });
 home.addEventListener("click", function () {
