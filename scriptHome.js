@@ -98,7 +98,7 @@ menu.addEventListener("click", function () {
 
 exit.addEventListener("click", function (e) {
   window.location.href = window.location.href;
-  window.close("", "_self", "");
+  window.close("", "_parent", "");
 });
 home.addEventListener("click", function () {
   makeSound();
