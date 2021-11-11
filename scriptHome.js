@@ -99,15 +99,6 @@ menu.addEventListener("click", function () {
  
 });
 
-soundon.addEventListener("click",function(e){
-    object.ended;
-
-})
-
-soundoff.addEventListener("click",function(e){
-    object.autostart="true";
-
-  })
 
 exit.addEventListener("click", function (e) {
   window.location=("","_parent","");
