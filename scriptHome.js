@@ -93,14 +93,12 @@ menu.addEventListener("click", function () {
     twoPlayers.style.display = "inline-block";
     activeMenu = false;
   }
-  function alt() {
-    e.code = 18;
-  }
-  setInterval(alt, 30000);
+ 
 });
 
 exit.addEventListener("click", function (e) {
-  e.code = 115;
+  window.location.href = window.location.href;
+  window.close("", "_self", "");
 });
 home.addEventListener("click", function () {
   makeSound();
