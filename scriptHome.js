@@ -18,7 +18,10 @@ const newGame = document.querySelector(".newGame");
 const scores = document.querySelector(".HighScores");
 const exit = document.querySelector(".exitGame");
 const buttons = document.querySelectorAll("button");
-const object=document.querySelector("object")
+const object=document.querySelector("object");
+const soundon=document.querySelector(".fa-volume-off");
+const soundoff=document.querySelector(".fa-volume-mute");
+
 slider.style.display = "none";
 previous.style.display = "none";
 next.style.display = "none";
@@ -96,8 +99,17 @@ menu.addEventListener("click", function () {
  
 });
 
+soundon.addEventListener("click",function(e){
+    object.style.display="none";
+  soundon.style.display="none";
+  soundoff.style.display="block"})
+
+soundoff.addEventListener("click",function(e){
+    object.style.display="inline-block";
+  soundon.style.display="block";
+  soundoff.style.display="none"})
+
 exit.addEventListener("click", function (e) {
-  object.style.display="none";
   window.location=("","_parent","");
 });
 home.addEventListener("click", function () {
