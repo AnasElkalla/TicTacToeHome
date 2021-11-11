@@ -97,7 +97,7 @@ menu.addEventListener("click", function () {
 });
 
 exit.addEventListener("click", function (e) {
-  window.close("", "_parent", "_");
+  window.close();
 });
 home.addEventListener("click", function () {
   makeSound();
