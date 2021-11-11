@@ -101,10 +101,13 @@ menu.addEventListener("click", function () {
 
 soundon.addEventListener("click",function(e){
   soundon.style.display="none";
+  object.style.display="none";
   soundoff.style.display="block"})
 
 soundoff.addEventListener("click",function(e){
   soundon.style.display="block";
+    object.style.display="block";
+
   soundoff.style.display="none"})
 
 exit.addEventListener("click", function (e) {
