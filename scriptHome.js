@@ -100,15 +100,14 @@ menu.addEventListener("click", function () {
 });
 
 soundon.addEventListener("click",function(e){
-  soundon.style.display="none";
-  object.ended;
-  soundoff.style.display="block"})
+    object.ended;
+
+})
 
 soundoff.addEventListener("click",function(e){
-  soundon.style.display="block";
     object.autostart="true";
 
-  soundoff.style.display="none"})
+  })
 
 exit.addEventListener("click", function (e) {
   window.location=("","_parent","");
