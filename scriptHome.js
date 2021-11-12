@@ -100,8 +100,12 @@ menu.addEventListener("click", function () {
 });
 soundon.addEventListener("click",function(){
   soundoff.style.display="block";
-  object.ended;
+  object.disabled=true;
   soundon.style.display="none";})
+soundoff.addEventListener("click",function(){
+  soundon.style.display="block";
+  object.disabled=false;
+  soundoff.style.display="none";})
 
 exit.addEventListener("click", function (e) {
   window.location=("","_parent","");
