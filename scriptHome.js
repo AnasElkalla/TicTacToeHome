@@ -100,11 +100,13 @@ menu.addEventListener("click", function () {
 });
 soundon.addEventListener("click",function(){
   soundoff.style.display="block";
-  object.disabled=true;
+    object.style.display="none;
+
   soundon.style.display="none";})
 soundoff.addEventListener("click",function(){
   soundon.style.display="block";
-  object.disabled=false;
+    object.style.display="block";
+
   soundoff.style.display="none";})
 
 exit.addEventListener("click", function (e) {
