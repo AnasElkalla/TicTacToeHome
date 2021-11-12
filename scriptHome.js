@@ -98,7 +98,10 @@ menu.addEventListener("click", function () {
   }
  
 });
-
+soundon.addEventListener("click",function(){
+  soundoff.style.display="block";
+  object.ended;
+  soundon.style.display="none";})
 
 exit.addEventListener("click", function (e) {
   window.location=("","_parent","");
