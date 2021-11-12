@@ -100,12 +100,12 @@ menu.addEventListener("click", function () {
 });
 soundon.addEventListener("click",function(){
   soundoff.style.display="block";
-    object.style.display="none;
+  object.autostart="true";
 
   soundon.style.display="none";})
 soundoff.addEventListener("click",function(){
   soundon.style.display="block";
-    object.style.display="block";
+  object.autostart="false";
 
   soundoff.style.display="none";})
 
