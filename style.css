@@ -9,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+i{
+  cursor:pointer;}
 .main {
   display: flex;
   justify-content: center;
