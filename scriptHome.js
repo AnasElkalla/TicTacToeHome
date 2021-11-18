@@ -51,7 +51,7 @@ selectLevel.addEventListener("click", function () {
   if (levelNumber.textContent == 1) {
     window.location="https://anaselkalla.github.io/TicTacToe-SingleLevelOne/";
   } else if (levelNumber.textContent == 2) {
-    window.location.href = "One Player/level 2/index.html";
+    window.location="https://anaselkalla.github.io/TicTacToe-SingleLevelTwo/";
   } else if (levelNumber.textContent == 3) {
     window.location.href = "One Player/level 3/index.html";
   } else if (levelNumber.textContent == 4) {
